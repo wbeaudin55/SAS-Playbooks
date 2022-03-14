@@ -3,8 +3,21 @@
 
   tasks: 
   - name: run some command  
+    command: "ls -Al /var/lib"
+    delegate_to: localhost
+
+  - name: run some command  
+    command: "ls -Al /var/lib/awx"
+    delegate_to: localhost
+
+  - name: run some command  
+    command: "ls -Al /var/lib/awx/projects"
+    delegate_to: localhost
+
+  - name: run some command  
     command: "ls -Al /var/lib/awx/projects/client"
     delegate_to: localhost
+
 
   - name: first task
     ansible.builtin.copy:
