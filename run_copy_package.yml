@@ -1,0 +1,8 @@
+- name: copy packages
+  hosts: all
+
+  tasks:
+  - name: first task
+    ansible.builtin.copy:
+      src: /tmp/client/aix-61
+      dest: /tmp/
