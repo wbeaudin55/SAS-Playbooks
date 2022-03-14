@@ -5,7 +5,6 @@
 	- name: run some command  
 	  command: "ls -al /"
 
-  tasks:
   - name: first task
     ansible.builtin.copy:
       src: /tmp/client/aix-61
