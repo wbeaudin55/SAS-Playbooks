@@ -4,7 +4,7 @@
   tasks: 
   - name: run some command  
     command: "ls -Al /"
-		delegate_to: localhost
+    delegate_to: localhost
 
   - name: first task
     ansible.builtin.copy:
