@@ -3,7 +3,8 @@
 
   tasks: 
   - name: run some command  
-    command: "ls -al /tmp"
+    command: "ls -Al /"
+		delegate_to: localhost
 
   - name: first task
     ansible.builtin.copy:
