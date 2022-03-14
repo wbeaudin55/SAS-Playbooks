@@ -3,7 +3,7 @@
 
   tasks: 
   - name: run some command  
-    command: "ls -al /"
+    command: "ls -al /tmp"
 
   - name: first task
     ansible.builtin.copy:
