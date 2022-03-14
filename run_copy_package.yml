@@ -1,6 +1,10 @@
 - name: copy packages
   hosts: all
 
+  tasks: 
+	- name: run some command  
+	  command: "ls -al /"
+
   tasks:
   - name: first task
     ansible.builtin.copy:
