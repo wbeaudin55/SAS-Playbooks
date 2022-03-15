@@ -17,5 +17,5 @@
     logon_policy_for_ad_user_reports_generate: true
     logon_policy_for_ad_user_reports_backup: false
 
-roles:
-- name: oneidentity.authentication_services.logon_policy_for_ad_user
+  roles:
+    - name: oneidentity.authentication_services.logon_policy_for_ad_user
