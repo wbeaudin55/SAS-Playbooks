@@ -17,7 +17,7 @@
     delegate_to: localhost
 
   - name: run some command  
-    command: "ls -Al /var/lib/awx"
+    command: "ls -Al /runner/project"
     delegate_to: localhost
 
   - name: run some command  
