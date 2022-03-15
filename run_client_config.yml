@@ -1,0 +1,32 @@
+---
+
+- hosts: all 
+  gather_facts: true
+  become: yes
+
+  vars:
+
+    # users.allow settings
+    client_config_user_allow:
+      - line: 'oneidentity\test'
+        state: absent
+      - line: 'oneidentity\guest'
+        state: absent
+
+    # users.deny settings
+    client_config_user_allow:
+      - line: 'oneidentity\administrator'
+        state: absent
+      - line: 'oneidentity\user1'
+        state: present
+
+    # Facts
+    client_config_facts_generate: true
+    client_config_facts_verbose: false
+
+    # Reports
+    client_config_reports_generate: true 
+    client_config_reports_backup: false 
+
+  roles:
+    - name: oneidentity.authentication_services.client_config
