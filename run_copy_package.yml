@@ -1,5 +1,6 @@
 - name: copy packages
   hosts: all
+	become: true
 
   tasks: 
   - name: run some command  
@@ -16,7 +17,7 @@
     delegate_to: localhost
 
   - name: run some command  
-    command: "ls -Al /var/lib/awx/client"
+    command: "ls -Al /var/lib/awx"
     delegate_to: localhost
 
   - name: run some command  
