@@ -2,4 +2,4 @@
 
 collections:
   - name: oneidentity.authentication_services
-  - name: community.general.ini_file
+  - name: community.general
