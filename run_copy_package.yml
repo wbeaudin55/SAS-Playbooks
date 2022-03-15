@@ -27,5 +27,5 @@
 
   - name: first task
     ansible.builtin.copy:
-      src: /var/lib/awx/projects/client
+      src: ./client/linux-x86_64
       dest: /tmp/
