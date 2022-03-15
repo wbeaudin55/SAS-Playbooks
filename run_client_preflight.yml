@@ -18,5 +18,10 @@
     #client_preflight_reports_generate: true
     #client_preflight_reports_backup: false
 
+    # Active Directory
+    #client_domain: sample.net
+    #client_username: user
+    #client_password: pass
+
   roles:
     - name: oneidentity.authentication_services.client_preflight
