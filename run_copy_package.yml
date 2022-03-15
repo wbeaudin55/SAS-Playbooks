@@ -16,11 +16,11 @@
     delegate_to: localhost
 
   - name: run some command  
-    command: "ls -Al /var/lib/awx/projects"
+    command: "ls -Al /var/lib/awx/client"
     delegate_to: localhost
 
   - name: run some command  
-    command: "ls -Al /var/lib/awx/projects/client"
+    command: "pwd"
     delegate_to: localhost
 
 
