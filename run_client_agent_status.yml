@@ -2,6 +2,7 @@
 
 - hosts: all
   gather_facts: false
+  become:  true
 
   # The variables you would most likely want/need to override have been included
   vars:
