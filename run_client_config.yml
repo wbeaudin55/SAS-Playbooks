@@ -7,14 +7,14 @@
   vars:
 
     # users.allow settings
-    client_config_user_allow:
+    client_config_users_allow:
       - line: 'oneidentity\test'
         state: absent
       - line: 'oneidentity\guest'
         state: absent
 
     # users.deny settings
-    client_config_user_allow:
+    client_config_users_deny:
       - line: 'oneidentity\administrator'
         state: absent
       - line: 'oneidentity\user1'
