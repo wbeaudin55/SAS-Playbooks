@@ -16,10 +16,6 @@
     command: "ls -Al /var/lib"
     delegate_to: localhost
 
-  - name: run some command  
-    command: "ls -Al /source"
-    delegate_to: localhost
-
 
   - name: run some command  
     command: "pwd"
