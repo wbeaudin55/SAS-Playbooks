@@ -17,10 +17,6 @@
     delegate_to: localhost
 
   - name: run some command  
-    command: "ls -Al /runner/project"
-    delegate_to: localhost
-
-  - name: run some command  
     command: "ls -Al /source"
     delegate_to: localhost
 
