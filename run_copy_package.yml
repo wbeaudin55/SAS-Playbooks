@@ -2,10 +2,10 @@
   hosts: all
   become: true
 
-  - name: Create Directory
-    file:
-     path: /root/sas
-     state: directory
+  - name: mkdir /root/saa
+    ansible.builtin.file:
+      path: /root/sas
+      state: director
      
   - name: first task
     ansible.builtin.copy:
