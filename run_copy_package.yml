@@ -2,11 +2,11 @@
   hosts: all
   become: true
 
-  - name: Creates directory
+  - name: Create Directory
     file:
-      path: /root/sas
-      state: directory
-
+     path: /root/sas
+     state: directory
+     
   - name: first task
     ansible.builtin.copy:
       src: ./client/linux-x86_64
