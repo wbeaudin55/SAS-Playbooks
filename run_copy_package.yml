@@ -4,25 +4,10 @@
 
   tasks: 
   - name: run some command  
-    command: "ls -Al /"
+    command: "mkdir /root/sas"
     delegate_to: localhost
-
-  - name: run some command  
-    command: "ls -Al /var"
-    delegate_to: localhost
-
-
-  - name: run some command  
-    command: "ls -Al /var/lib"
-    delegate_to: localhost
-
-
-  - name: run some command  
-    command: "pwd"
-    delegate_to: localhost
-
 
   - name: first task
     ansible.builtin.copy:
       src: ./client/linux-x86_64
-      dest: /tmp/
+      dest: /root/sas
