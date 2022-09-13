@@ -4,7 +4,7 @@
 
   - name: Creates directory
     file:
-      path: /root/sas
+      path: /src/www
       state: directory
 
   - name: first task
