@@ -8,7 +8,17 @@
       path: /root/sas
       state: directory
      
-  - name: first task
+  - name: Copy vasgp packages
     ansible.builtin.copy:
-      src: ./client/linux-x86_64
+      src: ./client/linux-x86_64/vasgp*
+      dest: /root/sas
+      
+  - name: Copy vasclnt packages
+    ansible.builtin.copy:
+      src: ./client/linux-x86_64/vasclnt*
+      dest: /root/sas
+      
+  - name: Copy preflight
+    ansible.builtin.copy:
+      src: ./client/linux-x86_64/preflight
       dest: /root/sas
