@@ -2,7 +2,7 @@
   hosts: all
   become: true
 
-  - name: mkdir /root/saa
+  - name: mkdir /root/sas
     ansible.builtin.file:
       path: /root/sas
       state: director
