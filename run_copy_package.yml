@@ -10,12 +10,12 @@
      
   - name: Copy vasgp packages
     ansible.builtin.copy:
-      src: ./client/linux-x86_64/vasgp*
+      src: ./client/linux-x86_64/vasgp_5.0.3-39941_amd64.deb
       dest: /root/sas
       
   - name: Copy vasclnt packages
     ansible.builtin.copy:
-      src: ./client/linux-x86_64/vasclnt*
+      src: ./client/linux-x86_64/vasclnt_5.0.3-39941_amd64.deb
       dest: /root/sas
       
   - name: Copy preflight
