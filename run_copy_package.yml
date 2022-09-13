@@ -2,10 +2,10 @@
   hosts: all
   become: true
 
-  tasks: 
-  - name: run some command  
-    command: "mkdir /root/sas"
-    delegate_to: localhost
+- name: Creates directory
+  file:
+    path: /root/sas
+    state: directory
 
   - name: first task
     ansible.builtin.copy:
