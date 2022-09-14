@@ -3,23 +3,23 @@
   become: true
 
   tasks:
-  - name: mkdir /root/sas
+  - name: mkdir /root/SAS-5.0.7/client
     ansible.builtin.file:
-      path: /root/sas
+      path: /root/SAS-5.0.7/client
       state: directory
      
   - name: Copy vasgp packages
     ansible.builtin.copy:
       src: ./client/linux-x86_64/vasgp_5.0.3-39941_amd64.deb
-      dest: /root/sas
+      dest: /root/SAS-5.0.7/client
       
   - name: Copy vasclnt packages
     ansible.builtin.copy:
       src: ./client/linux-x86_64/vasclnt_5.0.3-39941_amd64.deb
-      dest: /root/sas
+      dest: /root/SAS-5.0.7/client
       
   - name: Copy preflight
     ansible.builtin.copy:
       src: ./client/linux-x86_64/preflight
-      dest: /root/sas
+      dest: /root/SAS-5.0.7/client
       mode: "0755"
